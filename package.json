@@ -1,0 +1,29 @@
+{
+  "name": "@graphile/smart-tags-table",
+  "version": "0.0.0",
+  "description": "Use a table to manage smart tags",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphile/smart-tags-table.git"
+  },
+  "keywords": [
+    "postgraphile",
+    "graphile",
+    "graphile-build",
+    "table",
+    "smart",
+    "tags",
+    "smart",
+    "comments"
+  ],
+  "author": "Benjie Gillam <code@benjiegillam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/graphile/smart-tags-table/issues"
+  },
+  "homepage": "https://github.com/graphile/smart-tags-table#readme"
+}
