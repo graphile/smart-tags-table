@@ -91,7 +91,8 @@ create table public.smart_tags (
 );
 ```
 
-A more full implementation with validation rules could be something like:
+A more full implementation with validation rules and support for watch mode
+could be something like:
 
 ```sql
 create function public.is_valid_smart_tags_json(tags json)
@@ -125,6 +126,16 @@ create table public.smart_tags (
   tags json not null default '{}' check(public.is_valid_smart_tags_json(tags)),
   unique (kind, identifier)
 );
+create function public.tg_smart_tags__notify() returns trigger as $$
+begin
+  perform pg_notify('smart_tags_table'::text, ''::text);
+  return null;
+end;
+$$ language plpgsql;
+create trigger smart_tags_changed
+  after insert or update or delete on public.smart_tags
+  for each statement
+  execute procedure public.tg_smart_tags__notify();
 ```
 
 Technically you don't need the function and the check constraints, and you may
