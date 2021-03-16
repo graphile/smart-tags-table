@@ -4,7 +4,7 @@
   "description": "Use a table to manage smart tags",
   "main": "dist/index.js",
   "scripts": {
-    "prepack": "tsc",
+    "prepack": "rm -Rf dist && tsc",
     "test": "jest"
   },
   "repository": {
@@ -38,5 +38,6 @@
     "graphile-utils": "^4.11.2",
     "pg": "^8.5.1",
     "tslib": "^2.1.0"
-  }
+  },
+  "files": ["dist"]
 }
