@@ -1,6 +1,6 @@
 {
   "name": "@graphile/smart-tags-table",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Use a table to manage smart tags",
   "main": "dist/index.js",
   "scripts": {
@@ -39,5 +39,7 @@
     "pg": "^8.5.1",
     "tslib": "^2.1.0"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
