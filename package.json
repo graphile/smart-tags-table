@@ -4,6 +4,7 @@
   "description": "Use a table to manage smart tags",
   "main": "dist/index.js",
   "scripts": {
+    "prepack": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -25,5 +26,17 @@
   "bugs": {
     "url": "https://github.com/graphile/smart-tags-table/issues"
   },
-  "homepage": "https://github.com/graphile/smart-tags-table#readme"
+  "homepage": "https://github.com/graphile/smart-tags-table#readme",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "graphile-build": "^4.11.0",
+    "graphile-build-pg": "^4.11.2",
+    "graphile-utils": "^4.11.2",
+    "pg": "^8.5.1",
+    "tslib": "^2.1.0"
+  }
 }
