@@ -10,6 +10,12 @@ In general, using the other approaches are preferred. This plugin is primarily
 intended for applications which are allowing users to manipulate the GraphQL and
 maybe even database schema at run time.
 
+## Crowd-funded open-source software
+
+We rely on the community's support to keep producing and maintaining OSS; if you
+find this plugin helpful, please
+[click here to find out more about sponsors and sponsorship.](https://www.graphile.org/sponsor/)
+
 ## Usage
 
 Please note you have to create a `smart_tags` table as described
